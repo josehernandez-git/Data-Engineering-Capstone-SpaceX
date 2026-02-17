@@ -18,7 +18,26 @@ It extracts raw JSON, transforms nested launch/core records into a relational mo
 ## How to run the pipeline
 
 1) Clone or download all files in my repo
-2) Install all dependencies:
+   
+3) Install all dependencies:
+   
    pip install -r requirements.txt
 
+4) Extract SpaceX API data:
 
+   python scripts/01_extract_spacex.py
+
+5) Transform and Load into the DuckDB:
+
+   python scripts/02_transform_load_duckdb.py
+
+6) Run the analysis:
+
+   python scripts/03_regression_analysis.py
+
+7) Launch the Dashboard:
+
+   python -m streamlit run app.py
+
+
+<img width="540" height="300" alt="image" src="https://github.com/user-attachments/assets/b969076c-7aef-4018-a677-88aa2404f373" />
