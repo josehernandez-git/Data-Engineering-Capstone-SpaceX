@@ -15,27 +15,10 @@ It extracts raw JSON, transforms nested launch/core records into a relational mo
 
 ---
 
-## Project structure
-
- app.py
-requirements.txt
-data/raw/ # raw JSON snapshots
-db/spacex.duckdb # DuckDB database (created by ETL)
-scripts/
-01_extract_spacex.py
-02_transform_load_duckdb.py
-03_regression_analysis.py
----
-
 ## How to run the pipeline
 
-├── app.py
-├── requirements.txt
-├── data/
-│ └── raw/ # raw JSON snapshots
-├── db/
-│ └── spacex.duckdb # DuckDB database (created by ETL)
-└── scripts/
-├── 01_extract_spacex.py
-├── 02_transform_load_duckdb.py
-└── 03_regression_analysis.py
+1) Clone or download all files in my repo
+2) Install all dependencies:
+   pip install -r requirements.txt
+
+
