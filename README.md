@@ -17,16 +17,14 @@ It extracts raw JSON, transforms nested launch/core records into a relational mo
 
 ## Project structure
 
-├── app.py
-├── requirements.txt
-├── data/
-│ └── raw/ # raw JSON snapshots
-├── db/
-│ └── spacex.duckdb # DuckDB database (created by ETL)
-└── scripts/
-├── 01_extract_spacex.py
-├── 02_transform_load_duckdb.py
-└── 03_regression_analysis.py
+ app.py
+requirements.txt
+data/raw/ # raw JSON snapshots
+db/spacex.duckdb # DuckDB database (created by ETL)
+scripts/
+01_extract_spacex.py
+02_transform_load_duckdb.py
+03_regression_analysis.py
 ---
 
 ## How to run the pipeline
